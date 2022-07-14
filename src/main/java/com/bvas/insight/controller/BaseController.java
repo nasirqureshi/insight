@@ -21,6 +21,7 @@ import com.bvas.insight.jdbc.MpStocksDAOImpl;
 import com.bvas.insight.service.ExcelService;
 import com.bvas.insight.service.MainService;
 import com.bvas.insight.service.ReorderLevelService;
+import com.bvas.insight.service.ReportService;
 
 public class BaseController {
 
@@ -93,11 +94,9 @@ public class BaseController {
 	@Qualifier("reorderLevelService")
 	protected ReorderLevelService reorderLevelService;
 
-	/*
-	 * @Autowired
-	 * 
-	 * @Qualifier("reportService") protected ReportService reportService;
-	 */
+	@Autowired
+	@Qualifier("reportService")
+	protected ReportService reportService;
 
 	@Value("${app.repository}")
 	protected String repository;
