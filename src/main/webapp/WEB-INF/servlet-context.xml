@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+	xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<context:property-placeholder
+		location="/WEB-INF/chicago.properties" />
+	<context:property-placeholder
+		location="/WEB-INF/messages.properties" />
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+
+	<beans:bean id="viewResolver1"
+		class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<beans:property name="order" value="1" />
+		<beans:property name="basename" value="view" />
+	</beans:bean>
+
+	<beans:bean id="viewResolver2"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="order" value="2" />
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+
+	<beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+	<context:component-scan
+		base-package="com.bvas.insight" />
+
+	<beans:bean id="localDataSource"
+		class="com.zaxxer.hikari.HikariDataSource">
+		<beans:constructor-arg>
+			<beans:bean class="com.zaxxer.hikari.HikariConfig">
+				<beans:property name="poolName"
+					value="springHikariCP" />
+				<beans:property name="maximumPoolSize" value="300" />
+				<beans:property name="connectionTimeout"
+					value="3600000" />
+				<beans:property name="idleTimeout" value="2400000" />
+				<beans:property name="maxLifetime" value="14400000" />
+				<beans:property name="dataSource">
+					<beans:bean class="${jdbc.driver}">
+						<beans:property name="url"
+							value="${jdbc.databaseurl}" />
+						<beans:property name="user"
+							value="${jdbc.username}" />
+						<beans:property name="password"
+							value="${jdbc.password}" />
+					</beans:bean>
+				</beans:property>
+			</beans:bean>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<!-- Hibernate Session Factory -->
+	<beans:bean id="localSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="localDataSource" />
+		<beans:property name="packagesToScan">
+			<beans:array>
+				<beans:value>com.bvas.insight</beans:value>
+			</beans:array>
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				connection.autoReconnect=true
+				connection.autoReconnectForPools=true
+				show_sql=true
+				hbm2ddl.auto=validate
+				hibernate.connection.zeroDateTimeBehavior=convertToNull
+				hibernate.connection.isolation=2
+				hibernate.generate_statistics=true
+				hibernate.cache.use_structured_entries=true
+			</beans:value>
+		</beans:property>
+	</beans:bean>
+
+	<!-- Hibernate Transaction Manager -->
+	<beans:bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<beans:property name="sessionFactory"
+			ref="localSessionFactory" />
+	</beans:bean>
+
+	<!-- Activates annotation based transaction management -->
+	<tx:annotation-driven
+		transaction-manager="transactionManager" />
+
+	<!-- Chicago JDBC Definitions -->
+
+	<beans:bean id="chdatasourceref"
+		class="com.zaxxer.hikari.HikariDataSource">
+		<beans:constructor-arg>
+			<beans:bean class="com.zaxxer.hikari.HikariConfig">
+				<beans:property name="poolName"
+					value="springHikariCP" />
+				<beans:property name="maximumPoolSize" value="300" />
+				<beans:property name="connectionTimeout"
+					value="3600000" />
+				<beans:property name="idleTimeout" value="2400000" />
+				<beans:property name="maxLifetime" value="14400000" />
+				<beans:property name="dataSource">
+					<beans:bean class="${jdbc.driver}">
+						<beans:property name="url" value="${chs.jdbcurl}" />
+						<beans:property name="user" value="${chs.usr}" />
+						<beans:property name="password" value="${chs.pass}" />
+					</beans:bean>
+				</beans:property>
+			</beans:bean>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<!-- declare beans -->
+	<beans:bean id="chpartsdao"
+		class="com.bvas.insight.jdbc.ChStocksDAOImpl">
+		<beans:property name="chdataSource"
+			ref="chdatasourceref" />
+	</beans:bean>
+
+	<!-- Grand Rapids JDBC Definitions -->
+	<beans:bean id="grdatasourceref"
+		class="com.zaxxer.hikari.HikariDataSource">
+		<beans:constructor-arg>
+			<beans:bean class="com.zaxxer.hikari.HikariConfig">
+				<beans:property name="poolName"
+					value="springHikariCP" />
+				<beans:property name="maximumPoolSize" value="300" />
+				<beans:property name="connectionTimeout"
+					value="3600000" />
+				<beans:property name="idleTimeout" value="2400000" />
+				<beans:property name="maxLifetime" value="14400000" />
+				<beans:property name="dataSource">
+					<beans:bean class="${jdbc.driver}">
+						<beans:property name="url" value="${grs.jdbcurl}" />
+						<beans:property name="user" value="${grs.usr}" />
+						<beans:property name="password" value="${grs.pass}" />
+					</beans:bean>
+				</beans:property>
+			</beans:bean>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<!-- declare beans -->
+	<beans:bean id="grpartsdao"
+		class="com.bvas.insight.jdbc.GrStocksDAOImpl">
+		<beans:property name="grdataSource"
+			ref="grdatasourceref" />
+	</beans:bean>
+
+
+	<!-- Melrose JDBC Definitions -->
+	<!-- Grand Rapids JDBC Definitions -->
+	<beans:bean id="mpdatasourceref"
+		class="com.zaxxer.hikari.HikariDataSource">
+		<beans:constructor-arg>
+			<beans:bean class="com.zaxxer.hikari.HikariConfig">
+				<beans:property name="poolName"
+					value="springHikariCP" />
+				<beans:property name="maximumPoolSize" value="300" />
+				<beans:property name="connectionTimeout"
+					value="3600000" />
+				<beans:property name="idleTimeout" value="2400000" />
+				<beans:property name="maxLifetime" value="14400000" />
+				<beans:property name="dataSource">
+					<beans:bean class="${jdbc.driver}">
+						<beans:property name="url" value="${mps.jdbcurl}" />
+						<beans:property name="user" value="${mps.usr}" />
+						<beans:property name="password" value="${mps.pass}" />
+					</beans:bean>
+				</beans:property>
+			</beans:bean>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<!-- declare beans -->
+	<beans:bean id="mppartsdao"
+		class="com.bvas.insight.jdbc.MpStocksDAOImpl">
+		<beans:property name="mpdataSource"
+			ref="mpdatasourceref" />
+	</beans:bean>
+
+</beans:beans>

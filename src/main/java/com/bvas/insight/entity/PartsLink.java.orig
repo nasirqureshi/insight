@@ -1,0 +1,286 @@
+package com.bvas.insight.entity;
+
+// ~--- JDK imports ------------------------------------------------------------
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "partslink")
+public class PartsLink implements Serializable {
+
+<<<<<<< HEAD
+=======
+	public PartsLink() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public PartsLink(Integer id, String cert, String mlong, String make, String model, String notes, String oem,
+			BigDecimal oeprice, BigDecimal oldprice, String pname, String mvariables, String plink, String partno,
+			Date pricedate, Integer y1, Integer y2) {
+		super();
+		this.id = id;
+		this.cert = cert;
+		this.mlong = mlong;
+		this.make = make;
+		this.model = model;
+		this.notes = notes;
+		this.oem = oem;
+		this.oeprice = oeprice;
+		this.oldprice = oldprice;
+		this.pname = pname;
+		this.mvariables = mvariables;
+		this.plink = plink;
+		this.partno = partno;
+		this.pricedate = pricedate;
+		this.y1 = y1;
+		this.y2 = y2;
+	}
+
+>>>>>>> 1c4513dcb1fb698d6491044a70a750a702595ac3
+	private static final long serialVersionUID = 1L;
+
+	@Column(name = "cert")
+	public String cert;
+
+	@Column(name = "longpartlinknumber")
+	public String longpartlinknumber;
+
+	@Column(name = "make")
+	public String make;
+
+	@Column(name = "model")
+	public String model;
+
+	@Column(name = "notes")
+	public String notes;
+
+	@Column(name = "oem")
+	public String oem;
+
+	@Column(name = "oeprice")
+	public BigDecimal oeprice;
+
+	@Column(name = "oldprice")
+	public BigDecimal oldprice;
+
+	@Column(name = "partdescription1")
+	public String partdescription1;
+
+	@Column(name = "partdescription2")
+	public String partdescription2;
+
+	@Column(name = "partlinknumber")
+	public String partlinknumber;
+
+	@Column(name = "partno")
+	public String partno;
+
+	@Column(name = "pricedate")
+	public Date pricedate;
+
+	@Id
+	@Column(name = "serialno")
+	public Integer serialno;
+
+	@Column(name = "yearfrom")
+	public Integer yearfrom;
+
+	@Column(name = "yearto")
+	public Integer yearto;
+
+	public PartsLink() {
+		super();
+	}
+
+	public PartsLink(Integer serialno, String partno, String make, String model,
+			Integer yearfrom, Integer yearto, String partdescription2,
+			String partdescription1, String partlinknumber, String oem,
+			String longpartlinknumber, String notes, BigDecimal oeprice,
+			String cert, Date pricedate, BigDecimal oldprice) {
+		super();
+		this.serialno = serialno;
+		this.partno = partno;
+		this.make = make;
+		this.model = model;
+		this.yearfrom = yearfrom;
+		this.yearto = yearto;
+		this.partdescription2 = partdescription2;
+		this.partdescription1 = partdescription1;
+		this.partlinknumber = partlinknumber;
+		this.oem = oem;
+		this.longpartlinknumber = longpartlinknumber;
+		this.notes = notes;
+		this.oeprice = oeprice;
+		this.cert = cert;
+		this.pricedate = pricedate;
+		this.oldprice = oldprice;
+	}
+
+	public String getCert() {
+
+		return cert;
+	}
+
+	public String getLongpartlinknumber() {
+
+		return longpartlinknumber;
+	}
+
+	public String getMake() {
+
+		return make;
+	}
+
+	public String getModel() {
+
+		return model;
+	}
+
+	public String getNotes() {
+
+		return notes;
+	}
+
+	public String getOem() {
+
+		return oem;
+	}
+
+	public BigDecimal getOeprice() {
+
+		return oeprice;
+	}
+
+	public BigDecimal getOldprice() {
+
+		return oldprice;
+	}
+
+	public String getPartdescription1() {
+
+		return partdescription1;
+	}
+
+	public String getPartdescription2() {
+
+		return partdescription2;
+	}
+
+	public String getPartlinknumber() {
+
+		return partlinknumber;
+	}
+
+	public String getPartno() {
+
+		return partno;
+	}
+
+	public Date getPricedate() {
+
+		return pricedate;
+	}
+
+	public Integer getSerialno() {
+
+		return serialno;
+	}
+
+	public Integer getYearfrom() {
+
+		return yearfrom;
+	}
+
+	public Integer getYearto() {
+
+		return yearto;
+	}
+
+	public void setCert(String cert) {
+
+		this.cert = cert;
+	}
+
+	public void setLongpartlinknumber(String longpartlinknumber) {
+
+		this.longpartlinknumber = longpartlinknumber;
+	}
+
+	public void setMake(String make) {
+
+		this.make = make;
+	}
+
+	public void setModel(String model) {
+
+		this.model = model;
+	}
+
+	public void setNotes(String notes) {
+
+		this.notes = notes;
+	}
+
+	public void setOem(String oem) {
+
+		this.oem = oem;
+	}
+
+	public void setOeprice(BigDecimal oeprice) {
+
+		this.oeprice = oeprice;
+	}
+
+	public void setOldprice(BigDecimal oldprice) {
+
+		this.oldprice = oldprice;
+	}
+
+	public void setPartdescription1(String partdescription1) {
+
+		this.partdescription1 = partdescription1;
+	}
+
+	public void setPartdescription2(String partdescription2) {
+
+		this.partdescription2 = partdescription2;
+	}
+
+	public void setPartlinknumber(String partlinknumber) {
+
+		this.partlinknumber = partlinknumber;
+	}
+
+	public void setPartno(String partno) {
+
+		this.partno = partno;
+	}
+
+	public void setPricedate(Date pricedate) {
+
+		this.pricedate = pricedate;
+	}
+
+	public void setSerialno(Integer serialno) {
+
+		this.serialno = serialno;
+	}
+
+	public void setYearfrom(Integer yearfrom) {
+
+		this.yearfrom = yearfrom;
+	}
+
+	public void setYearto(Integer yearto) {
+
+		this.yearto = yearto;
+	}
+}

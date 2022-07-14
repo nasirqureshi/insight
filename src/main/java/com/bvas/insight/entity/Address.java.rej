@@ -1,0 +1,15 @@
+diff a/src/main/java/com/bvas/insight/entity/Address.java b/src/main/java/com/bvas/insight/entity/Address.java	(rejected hunks)
+@@ -90,10 +90,9 @@
+ 		this.region = "";
+ 	}
+ 
+-	public Address(String id, String type, String who, Integer invoicenumber,
+-			Date datecreated, String addr1, String addr2, String city,
+-			String state, String postalcode, String country, String phone,
+-			String ext, String fax, String region) {
++	public Address(String id, String type, String who, Integer invoicenumber, Date datecreated, String addr1,
++			String addr2, String city, String state, String postalcode, String country, String phone, String ext,
++			String fax, String region) {
+ 		super();
+ 		this.id = id;
+ 		this.type = type;
