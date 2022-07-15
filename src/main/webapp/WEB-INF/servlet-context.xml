@@ -25,7 +25,7 @@
 	<annotation-driven />
 
 	<context:property-placeholder
-		location="/WEB-INF/chicago.properties" />
+		location="/WEB-INF/local.properties" />
 	<context:property-placeholder
 		location="/WEB-INF/messages.properties" />
 
