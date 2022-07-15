@@ -507,7 +507,8 @@ public class MainController extends BaseController {
 				String startDate = dateFormat.format(calendar.getTime());
 				mav.addObject("startDate", startDate);
 				mav.addObject("endDate", endDate);
-				//mav.addObject("salesDetails", reportService.getSaleDetails(startDate, endDate));
+				// mav.addObject("salesDetails", reportService.getSaleDetails(startDate,
+				// endDate));
 				mav.addObject("user", user);
 				mav.addObject("branch", branch);
 				mav.addObject("appcss", appcss);

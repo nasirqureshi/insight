@@ -101,7 +101,9 @@
 
 
 
+
  
+
 
 
 
@@ -148,6 +150,8 @@
 
 
 
+
+
 :not
 
 
@@ -164,7 +168,9 @@
 
 
 
+
  
+
 
 
 
@@ -197,7 +203,9 @@
 
 
 
+
  
+
 
 
 
@@ -216,31 +224,44 @@
 )
 {
 transform
+
+
 :
+
  
+
 scale
+
+
 (0
- 
 .7
+
+
 );
-
-	
 margin-bottom
+
+
 :
+
  
+
 -10
 px
-;
 
-	
+
+;
 margin-top
+
+
 :
+
  
+
 -10
 px
+
+
 ;
-
-
 }
 .sweet-alert input {
 	border: 1px solid #bdc7d8;
@@ -298,12 +319,18 @@ transform
 
 
 
+
+
 :
 
 
 
 
+
+
 rotateX
+
+
 
 
 
@@ -315,6 +342,8 @@ deg
 
 
 
+
+
 )
 ,
 scale
@@ -322,9 +351,13 @@ scale
 
 
 
+
+
 (
 0
 .5
+
+
 
 
 
@@ -336,12 +369,18 @@ scale
 
 
 
+
+
 :
 
 
 
 
+
+
 rotateX
+
+
 
 
 
@@ -353,9 +392,13 @@ deg
 
 
 
+
+
 )
 ,
 scale
+
+
 
 
 
@@ -367,6 +410,8 @@ scale
 
 
 
+
+
 )
 ;
 opacity
@@ -374,7 +419,11 @@ opacity
 
 
 
+
+
 :
+
+
 
 
 
@@ -397,12 +446,18 @@ transform
 
 
 
+
+
 :
 
 
 
 
+
+
 rotateX
+
+
 
 
 
@@ -414,6 +469,8 @@ deg
 
 
 
+
+
 )
 ,
 scale
@@ -421,9 +478,13 @@ scale
 
 
 
+
+
 (
 0
 .5
+
+
 
 
 
@@ -435,12 +496,18 @@ scale
 
 
 
+
+
 :
 
 
 
 
+
+
 rotateX
+
+
 
 
 
@@ -452,9 +519,13 @@ deg
 
 
 
+
+
 )
 ,
 scale
+
+
 
 
 
@@ -466,6 +537,8 @@ scale
 
 
 
+
+
 )
 ;
 opacity
@@ -473,7 +546,11 @@ opacity
 
 
 
+
+
 :
+
+
 
 
 

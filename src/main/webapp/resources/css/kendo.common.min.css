@@ -1305,7 +1305,11 @@ left
 
 
 
+
+
 :
+
+
 
 
 
@@ -1321,7 +1325,11 @@ left
 
 
 
+
+
 :
+
+
 
 
 
@@ -1342,7 +1350,11 @@ left
 
 
 
+
+
 :
+
+
 
 
 
@@ -1358,7 +1370,11 @@ left
 
 
 
+
+
 :
+
+
 
 
 
@@ -1756,7 +1772,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -1784,7 +1802,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -1825,6 +1845,8 @@ left
 	
 	
 	
+	
+	
 	:not
 	
 	
@@ -1839,7 +1861,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -1868,7 +1892,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -1897,7 +1923,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -1925,6 +1953,7 @@ left
 	
 	
 	
+	
 	 
 	
 	
@@ -1939,7 +1968,10 @@ left
 	
 	
 	
+	
 	li
+	
+	
 	
 	
 	
@@ -1981,7 +2013,9 @@ left
 	
 	
 	
+	
 		
+	
 	
 	
 	
@@ -2010,7 +2044,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2039,7 +2075,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2067,7 +2105,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2108,6 +2148,8 @@ left
 	
 	
 	
+	
+	
 	:not
 	
 	
@@ -2122,7 +2164,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2151,7 +2195,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2180,7 +2226,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2208,7 +2256,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2249,6 +2299,8 @@ left
 	
 	
 	
+	
+	
 	:not
 	
 	
@@ -2263,7 +2315,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2292,7 +2346,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2321,7 +2377,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2349,6 +2407,7 @@ left
 	
 	
 	
+	
 	 
 	
 	
@@ -2363,7 +2422,10 @@ left
 	
 	
 	
+	
 	li
+	
+	
 	
 	
 	
@@ -2405,7 +2467,9 @@ left
 	
 	
 	
+	
 		
+	
 	
 	
 	
@@ -2434,7 +2498,9 @@ left
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -2451,11 +2517,17 @@ left
 	)
 	{
 	display
+	
+	
 	:
+	
 	 
+	
 	none
 	
 	
+	
+
 }
 
 .k-edge .k-pager-numbers .k-current-page .k-link, .k-ff .k-pager-numbers .k-current-page .k-link,
@@ -4399,9 +4471,13 @@ button.k-gantt-toggle {
 	
 	
 	
+	
+	
 	.k-gantt-views
 	>
 	li
+	
+	
 	
 	
 	
@@ -4442,7 +4518,9 @@ button.k-gantt-toggle {
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -4471,7 +4549,9 @@ button.k-gantt-toggle {
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -4488,11 +4568,17 @@ button.k-gantt-toggle {
 	)
 	{
 	display
+	
+	
 	:
+	
 	 
+	
 	none
 	
 	
+	
+
 }
 
 .k-gantt-toolbar>ul.k-gantt-views>li.k-current-view {
@@ -6107,6 +6193,8 @@ span.k-numerictextbox {
 
 
 
+
+
 .k-listbox-toolbar-right
 
 
@@ -6121,7 +6209,9 @@ span.k-numerictextbox {
 
 
 
+
  
+
 
 
 
@@ -6149,7 +6239,9 @@ span.k-numerictextbox {
 
 
 
+
  
+
 
 
 
@@ -6190,6 +6282,8 @@ li
 
 
 
+
+
 :not
 
 
@@ -6204,7 +6298,9 @@ li
 
 
 
+
  
+
 
 
 
@@ -6234,7 +6330,9 @@ li
 
 
 
+
 	
+
 
 
 
@@ -6251,10 +6349,16 @@ li
 )
 {
 margin-bottom
+
+
 :
+
  
+
 5
 px
+
+
 
 
 }
@@ -8368,9 +8472,13 @@ div.k-scheduler-marquee:after {
 	
 	
 	
+	
+	
 	.k-scheduler-views
 	>
 	li
+	
+	
 	
 	
 	
@@ -8411,7 +8519,9 @@ div.k-scheduler-marquee:after {
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -8440,7 +8550,9 @@ div.k-scheduler-marquee:after {
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -8457,11 +8569,17 @@ div.k-scheduler-marquee:after {
 	)
 	{
 	display
+	
+	
 	:
+	
 	 
+	
 	none
 	
 	
+	
+
 }
 
 .k-scheduler-toolbar li.k-nav-current .k-lg-date-format {
@@ -10810,7 +10928,9 @@ div.k-navigator .k-navigator-left, div.k-navigator .k-navigator-w {
 
 
 
+
  
+
 
 
 
@@ -10840,7 +10960,9 @@ div.k-navigator .k-navigator-left, div.k-navigator .k-navigator-w {
 
 
 
+
  
+
 
 
 
@@ -10873,7 +10995,9 @@ checkbox
 
 
 
+
  
+
 
 
 
@@ -10902,7 +11026,9 @@ checkbox
 
 
 
+
  
+
 
 
 
@@ -10936,7 +11062,9 @@ radio
 
 
 
+
 	
+
 
 
 
@@ -10965,7 +11093,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -10994,7 +11124,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -11023,7 +11155,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -11051,7 +11185,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -11081,7 +11217,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -11109,7 +11247,9 @@ radio
 
 
 
+
  
+
 
 
 
@@ -11150,6 +11290,8 @@ select
 
 
 
+
+
 :not
 
 
@@ -11164,7 +11306,9 @@ select
 
 
 
+
  
+
 
 
 
@@ -11195,7 +11339,9 @@ multiple
 
 
 
+
  
+
 
 
 
@@ -11224,7 +11370,9 @@ multiple
 
 
 
+
  
+
 
 
 
@@ -11252,7 +11400,9 @@ multiple
 
 
 
+
  
+
 
 
 
@@ -11282,7 +11432,9 @@ textarea
 
 
 
+
  
+
 
 
 
@@ -11310,7 +11462,9 @@ textarea
 
 
 
+
  
+
 
 
 
@@ -11340,7 +11494,9 @@ textarea
 
 
 
+
 	
+
 
 
 
@@ -11369,7 +11525,9 @@ textarea
 
 
 
+
  
+
 
 
 
@@ -11398,7 +11556,9 @@ textarea
 
 
 
+
  
+
 
 
 
@@ -11440,6 +11600,8 @@ input
 
 
 
+
+
 :not
 
 
@@ -11454,7 +11616,9 @@ input
 
 
 
+
  
+
 
 
 
@@ -11487,7 +11651,9 @@ checkbox
 
 
 
+
  
+
 
 
 
@@ -11516,7 +11682,9 @@ checkbox
 
 
 
+
  
+
 
 
 
@@ -11550,7 +11718,9 @@ radio
 
 
 
+
 	
+
 
 
 
@@ -11567,22 +11737,38 @@ radio
 )
 {
 width
+
+
 :
+
  
+
 80%;
 padding
+
+
 :
+
  
+
 .6em
+
  
+
 0;
 margin
+
+
 :
+
  
+
 -
 .5em
 
+
 	
+
 0
 }
 .km-pane-wrapper .k-mobile-list .k-edit-field>*, .km-pane-wrapper .k-mobile-list .k-widget,
@@ -11766,7 +11952,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11796,7 +11984,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11829,7 +12019,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11858,7 +12050,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11892,7 +12086,9 @@ margin
 	
 	
 	
+	
 		
+	
 	
 	
 	
@@ -11921,7 +12117,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11950,7 +12148,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -11979,7 +12179,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12007,7 +12209,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12037,7 +12241,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12065,7 +12271,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12106,6 +12314,8 @@ margin
 	
 	
 	
+	
+	
 	:not
 	
 	
@@ -12120,7 +12330,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12151,7 +12363,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12180,7 +12394,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12208,7 +12424,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12238,7 +12456,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12266,7 +12486,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12296,7 +12518,9 @@ margin
 	
 	
 	
+	
 		
+	
 	
 	
 	
@@ -12325,7 +12549,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12354,7 +12580,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12396,6 +12624,8 @@ margin
 	
 	
 	
+	
+	
 	:not
 	
 	
@@ -12410,7 +12640,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12443,7 +12675,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12472,7 +12706,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12506,7 +12742,9 @@ margin
 	
 	
 	
+	
 		
+	
 	
 	
 	
@@ -12523,8 +12761,12 @@ margin
 	)
 	{
 	width
+	
+	
 	:
+	
 	 
+	
 	50%
 }
 
@@ -12658,9 +12900,13 @@ margin
 	
 	
 	
+	
+	
 	.k-scheduler-views
 	>
 	li
+	
+	
 	
 	
 	
@@ -12701,7 +12947,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12730,7 +12978,9 @@ margin
 	
 	
 	
+	
 	 
+	
 	
 	
 	
@@ -12747,11 +12997,17 @@ margin
 	)
 	{
 	display
+	
+	
 	:
+	
 	 
+	
 	none
 	
 	
+	
+
 }
 
 .k-scheduler-toolbar li.k-nav-current .k-lg-date-format {
@@ -16389,7 +16645,9 @@ div.k-spreadsheet-window {
 
 
 
+
  
+
 
 
 
@@ -16429,7 +16687,9 @@ div.k-spreadsheet-window {
 
 
 
+
  
+
 
 
 
@@ -16470,6 +16730,8 @@ div.k-spreadsheet-window {
 
 
 
+
+
 :not
 
 
@@ -16485,7 +16747,9 @@ div.k-spreadsheet-window {
 
 
 
+
 	
+
 
 
 
@@ -16514,7 +16778,9 @@ div.k-spreadsheet-window {
 
 
 
+
  
+
 
 
 
@@ -16543,7 +16809,9 @@ div.k-spreadsheet-window {
 
 
 
+
  
+
 
 
 
@@ -16572,7 +16840,9 @@ div.k-spreadsheet-window {
 
 
 
+
  
+
 
 
 
@@ -16589,27 +16859,45 @@ div.k-spreadsheet-window {
 )
 {
 margin
+
+
 :
+
  
+
 0;
 border-color
-:
- 
-transparent
-;
 
-	
+
+:
+
+ 
+
+transparent
+
+
+;
 background-color
-:
- 
-transparent
-;
 
-	
-background-image
+
 :
+
  
+
+transparent
+
+
+;
+background-image
+
+
+:
+
+ 
+
 none
+
+
 
 
 }

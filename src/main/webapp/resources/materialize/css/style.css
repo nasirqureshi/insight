@@ -293,7 +293,11 @@ li.home:before {
 
 
 
+
+
 :
+
+
 
 
 
@@ -303,9 +307,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -317,7 +325,11 @@ deg
 
 
 
+
+
 :
+
+
 
 
 
@@ -327,9 +339,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -341,7 +357,11 @@ transform
 
 
 
+
+
 :
+
+
 
 
 
@@ -351,9 +371,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -377,7 +401,11 @@ keyframes spin { 0% {
 
 
 
+
+
 :
+
+
 
 
 
@@ -387,9 +415,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -401,7 +433,11 @@ deg
 
 
 
+
+
 :
+
+
 
 
 
@@ -411,9 +447,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -425,7 +465,11 @@ transform
 
 
 
+
+
 :
+
+
 
 
 
@@ -435,9 +479,13 @@ rotate
 
 
 
+
+
 (
 360
 deg
+
+
 
 
 
@@ -647,6 +695,7 @@ input.header-search-input:focus {
 
 
 
+
  
 
 
@@ -663,7 +712,10 @@ input.header-search-input:focus {
 
 
 
+
 input
+
+
 
 
 
@@ -729,7 +781,11 @@ text
 
 
 
+
+
 :focus
+
+
 
 
 
@@ -776,7 +832,9 @@ text
 
 
 
+
  
+
 
 
 
@@ -811,7 +869,9 @@ readonly
 
 
 
+
  
+
 
 
 
@@ -830,27 +890,41 @@ readonly
 )
 {
 border-bottom
+
+
 :
+
  
+
 1
 px
+
  
+
 solid
+
  
+
 #fff
+
  
+
 !
 important
-;
 
-	
+
+;
 box-shadow
+
+
 :
+
  
+
 none
+
+
 ;
-
-
 }
 .search-out-text {
 	border-bottom: 1px solid #fff !important;
